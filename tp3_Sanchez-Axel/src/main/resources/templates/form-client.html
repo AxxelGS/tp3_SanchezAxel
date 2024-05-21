@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <header id="cabecera">
+        <h1>Registro de Cliente</h1>
+    </header>
+    <main class="contenidoPrincipal">
+        <form>
+            <label for="dni">DNI:</label>
+            <input type="number" id="dni" name="dni" required>
+            
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+            
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            
+            <label>Género:</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="x" name="genero" value="x">
+            <label for="x">X</label>
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required>
+            
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia" required>
+                <option value="">Elige una opcion</option>
+                <option value="jujuy">Jujuy</option>
+                <option value="salta">Salta</option>
+                <option value="tucuman">Tucumán</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+            </select>
+            
+            <label for="telefono">Número de Teléfono Celular:</label>
+            <input type="tel" id="telefono" name="telefono">
+            
+            <label>Categorías de Interés:</label>
+            <input type="checkbox" id="categoria1" name="categoria" value="categoria1">
+            <label for="categoria1">Programacion</label>
+            <input type="checkbox" id="categoria2" name="categoria" value="categoria2">
+            <label for="categoria2">Deportes</label>
+            
+            <label for="sugerencias">Sugerencias para la Empresa:</label>
+            <textarea id="sugerencias" name="sugerencias" rows="4" cols="50"></textarea>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los términos y condiciones</label>
+            
+            <input type="checkbox" id="informacion" name="informacion">
+            <label for="informacion">Acepto recibir información relativa a la empresa</label>
+            
+            <input type="submit" value="Registrar">
+        </form>
+    </main>
+    <footer id="footer">
+        	<a href="https://www.facebook.com/escminasunju" class="link">Facebook</a> |
+            <a href="https://www.youtube.com/c/FacultaddeIngenier%C3%ADaUNJu" class="link">Youtube</a> |
+            <a href="https://www.instagram.com/fiunju/" class="link">Instagram</a> |
+            <p>Contacto: virtual@unju.edu.ar</p>
+            <img src="https://virtual.unju.edu.ar/pluginfile.php/4537/block_html/content/unjuvirtual_footer.png" alt="UNJU">
+    </footer>
+</body>
+</html>
